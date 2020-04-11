@@ -20,17 +20,18 @@ data ommitted within repo for data sensitivity reasons)
 - Loading data into Pandas DataFrame
 - Using categorical variables for embedings ([more on embedings](https://towardsdatascience.com/neural-network-embeddings-explained-4d028e6f0526))
 - using continuous variables (numeric values) for neural nets
+- using 3 data sets: train, validation and test data
 
 ###### \*unfortunately for data privacy reasons the data required is not included in this repo. Please reach out or message if you will
 
-### Augmenting Data:
+### Treating Data:
 
 **1.Translation services**
 
 - Google tranlsate API and service account
 - client was set up to provide the translations from **nl** to **en**
 
-**2. Overrides**
+**2. Augmenting data**
 
 - Boolean-like field value overwrrides - fields of 2 options of strings become integers - 0, 1
 - such as `pureOrMixed` string values of `pure` and `mixed` become integers 1 or 0
