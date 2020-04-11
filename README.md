@@ -1,5 +1,7 @@
 # Tabular Waste Data Classifications Model
 
+### See the ML model [here](https://github.com/Yolantele/ML-data-clasifier/blob/master/tabular_neural_net_classification_model.ipynb)
+
 ## Uses Dutch Waste Data
 
 - Construction and demolition waste
@@ -11,8 +13,6 @@
 ###### data ommitted within repo for data sensitivity reasons
 
 ## Training of the Fast AI Machine Learning classification model:
-
-### See the ML model [here](https://github.com/Yolantele/ML-data-clasifier/blob/master/tabular_neural_net_classification_model.ipynb)
 
 **This project uses [Fast AI Tabular Neural Nets](https://docs.fast.ai/tabular.html) for ML classification model:**
 
