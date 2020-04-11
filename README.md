@@ -14,7 +14,7 @@
 
 ### See the ML model [here](https://github.com/Yolantele/ML-data-clasifier/blob/master/tabular_neural_net_classification_model.ipynb)
 
-**[Fast AI Tabular Neural Nets](https://docs.fast.ai/tabular.html) for ML classification model**
+**This project uses [Fast AI Tabular Neural Nets](https://docs.fast.ai/tabular.html) for ML classification model:**
 
 - Using neural nets for analyzing tabular data
 - Loading data into Pandas DataFrame
