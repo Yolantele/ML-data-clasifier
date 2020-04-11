@@ -28,13 +28,13 @@ data ommitted within repo for data sensitivity reasons)
 
 **1.Translation services**
 
-- Google tranlsate API and service account
+- [Google tranlsate API](https://cloud.google.com/translate/docs) and service account
 - client was set up to provide the translations from **nl** to **en**
 
 **2. Augmenting data**
 
-- Boolean-like field value overwrrides - fields of 2 options of strings become integers - 0, 1
-- such as `pureOrMixed` string values of `pure` and `mixed` become integers 1 or 0
+- Treating Boolean-like field value overwrrides - fields of 2 options of strings become integers - 0, 1
+- Fields such as `pureOrMixed` string values of `pure` and `mixed` become integers 1 or 0 to be set later as continuous variables in tabular learner
 - Prefilling the fields where possible - such as waste `description` field, prefilled with `euralCodeDescription` when underdefined
 
 **3. Creating both train and test data for Panda's DataFrames**
