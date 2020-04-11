@@ -12,7 +12,7 @@
 
 ## Training of the Fast AI Machine Learning classification model:
 
-### [See the ML model](https://github.com/Yolantele/ML-data-clasifier/blob/master/tabular_neural_net_classification_model.ipynb)
+### See the ML model [here](https://github.com/Yolantele/ML-data-clasifier/blob/master/tabular_neural_net_classification_model.ipynb)
 
 **[Fast AI Tabular Neural Nets](https://docs.fast.ai/tabular.html) for ML classification model**
 
