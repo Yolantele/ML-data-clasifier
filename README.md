@@ -30,17 +30,13 @@ data ommitted within repo for data sensitivity reasons)
 - Google tranlsate API and service account
 - client was set up to provide the translations from **nl** to **en**
 
-**2. Boolean-like field value overwrrides**
+**2. Overrides**
 
-- translating fields of 2 options of strings values into integers - 0, 1
+- Boolean-like field value overwrrides - fields of 2 options of strings become integers - 0, 1
 - such as `pureOrMixed` string values of `pure` and `mixed` become integers 1 or 0
+- Prefilling the fields where possible - such as waste `description` field, prefilled with `euralCodeDescription` when underdefined
 
-**3. Enriching data**
-
-- Prefilling the fields where possible
-- such as waste `description` field, prefilled with `euralCodeDescription` when underdefined
-
-**4. Creating both train and test data frames**
+**3. Creating both train and test data for Panda's DataFrames**
 
 - for training of ML model - uses train data with rich fields
 - for testing of ML model - uses test data with missing fields
