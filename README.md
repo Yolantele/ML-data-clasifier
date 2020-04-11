@@ -37,7 +37,8 @@
 - Fields such as `pureOrMixed` string values of `pure` and `mixed` become integers 1 or 0 to be set later as continuous variables in tabular learner
 - Prefilling the fields where possible - such as waste `description` field, prefilled with `euralCodeDescription` when underdefined
 
-**3. Creating both train and test data for Panda's DataFrames**
+**3. Creating 3 sets of data: train, validate and test data **
 
-- for training of ML model - uses train data with rich fields
+- loaded to pandas DataFrame
+- for training of ML model - uses train and validation data with rich fields
 - for testing of ML model - uses test data with missing fields
