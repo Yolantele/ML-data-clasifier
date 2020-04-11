@@ -2,7 +2,7 @@ const { Translate } = require('@google-cloud/translate').v2
 
 const translator = new Translate({
   projectId: 'natural-osprey-273717',
-  keyFilename: '/Users/jolantajas/Projects/recycling/service-account.json'
+  keyFilename: '/Users/jolantajas/Projects/ML-data-clasifier/service-account.json'
 })
 
 module.exports = async row => {

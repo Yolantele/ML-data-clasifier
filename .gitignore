@@ -1,7 +1,3 @@
 service-account.json
-public/
-nlData.csv
-evcTable.csv
 node_modules/
 private/
-sanitizedCSVs/
