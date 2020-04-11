@@ -1,0 +1,22 @@
+{
+  "name": "recycling",
+  "version": "1.0.0",
+  "author": "Jolanta Jasiulionyte",
+  "description": "ML project for clasifying recycled data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "translate": "bash ./translate.sh"
+  },
+  "author": "jolanta jasiulionyte",
+  "license": "ISC",
+  "devDependencies": {
+    "@google-cloud/translate": "^5.3.0",
+    "csv-parser": "^2.3.2",
+    "csvtojson": "^2.0.10",
+    "fs": "^0.0.1-security",
+    "google-translate": "^3.0.0",
+    "i18next": "^19.4.0",
+    "json-autotranslate": "^1.5.4"
+  }
+}
