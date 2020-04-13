@@ -18,7 +18,7 @@
 
 - Using neural nets for analyzing tabular data
 - Loading data into Pandas DataFrame
-- Using categorical variables for embedings ([more on embedings](https://towardsdatascience.com/neural-network-embeddings-explained-4d028e6f0526))
+- Using categorical variables for entity embedings([more on embedings](https://towardsdatascience.com/neural-network-embeddings-explained-4d028e6f0526))
 - using continuous variables (numeric values) for neural nets
 - using 3 data sets: train, validation and test data
 

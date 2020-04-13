@@ -2,11 +2,12 @@ const csv = require('csv-parser')
 const fs = require('fs')
 const translateRow = require('./googleTranslateClient')
 const ewc_descriptions = require('./private/originals/EWCcodeDescriptions')
-console.log('go to index.js to uncomment function callls')
+// console.log('go to index.js to uncomment function callls')
+
 let results = []
 
 const pickClassifiedCSV = async () => {
-  fs.createReadStream('./private/sanitized/enData.csv')
+  fs.createReadStream('./private/originals/nlData.csv')
     .pipe(csv())
     .on('data', row => {
       let { description, euralDescription, euralCode, material, mixedOrPure, cleanOrDirty } = row
@@ -21,13 +22,15 @@ const pickClassifiedCSV = async () => {
       if (mixedOrPure == 'pure') row.mixedOrPure = '0'
       if (cleanOrDirty == 'contaminated') row.cleanOrDirty = '1'
       if (cleanOrDirty == 'clean') row.cleanOrDirty = '0'
-      if (material.length == 0) results.push(row)
+      // console.log(row)
+      if (material.length === 0) results.push(row) // if material is given
+      // saveFile('nlMaterialData', JSON.stringify(results))
     })
     .on('end', () => {
-      saveFile('testNoMaterialData', JSON.stringify(results))
+      fs.writeFileSync('nlWithoutMaterialData', JSON.stringify(results))
     })
 }
-// pickClassifiedCSV()
+pickClassifiedCSV()
 
 let undescribedEuralCodes = []
 
@@ -76,4 +79,3 @@ const getEuralCodeDescriptions = () => {
       saveFile('EWCcodeDescriptions', JSON.stringify([allCodes]))
     })
 }
-// getEuralCodeDescriptions()
