@@ -1,4 +1,9 @@
-# Tabular Waste Data Classifications Model
+# Tabular Waste Data Classifications Model POCs 
+
+1. Fast AI multi-label classification POC - EN 
+2. SpaCy & Scikit-learn multi-label classifications POC - EN, NL 
+3. SPaCy Entities Anlysis POC - EN, NL 
+
 
 ### See the ML model [here](https://github.com/Yolantele/ML-data-clasifier/blob/master/tabular_neural_net_classification_model.ipynb)
 
